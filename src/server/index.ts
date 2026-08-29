@@ -149,12 +149,12 @@ app.get("/api/dashboard", requireAuth, async (request, response) => {
   }
 
   const meme = getRandomMeme();
-  const contentIds = dashboardContentIds(preferences, meme);
   const [prices, news, insight] = await Promise.all([
     getCoinPrices(preferences),
     getMarketNews(preferences),
     getAiInsight(preferences)
   ]);
+  const contentIds = dashboardContentIds(preferences, meme, insight);
   const votes = getVotesForContent(authedRequest.user.id, Object.values(contentIds));
 
   return response.json({
