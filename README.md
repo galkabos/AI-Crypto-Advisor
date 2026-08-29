@@ -77,6 +77,4 @@ The application uses SQLite for storing users, preferences, and dashboard feedba
 
 ## Links
 
-* **Live App:** [Add deployed URL]
-* **GitHub Repository:** [Add repository URL]
-
+- **Live App:** https://ai-crypto-advisor-production-bafb.up.railway.app/
