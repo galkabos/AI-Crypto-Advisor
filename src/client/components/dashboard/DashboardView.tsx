@@ -98,10 +98,6 @@ export function DashboardView({ session, options, onSession }: DashboardViewProp
           <h1>Daily crypto dashboard</h1>
         </div>
         <div className="header-actions">
-          <button className="icon-text-button" onClick={loadDashboard} title="Refresh dashboard">
-            <RefreshCw size={18} className={loading ? "spin" : ""} />
-            Refresh
-          </button>
           <button className="icon-button" onClick={handleLogout} title="Logout" aria-label="Logout">
             <LogOut size={18} />
           </button>
