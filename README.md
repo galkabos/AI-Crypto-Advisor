@@ -39,34 +39,9 @@ cp .env.example .env
 npm run dev
 ```
 
-Frontend:
-
-```text
-http://localhost:5173
-```
-
-## Environment Variables
-
-Create a `.env` file based on `.env.example` and configure:
-
-```env
-PORT=4100
-HOST=127.0.0.1
-JWT_SECRET=your-secret
-
-MARKETAUX_API_KEY=
-OPENROUTER_API_KEY=
-OPENROUTER_MODEL=minimax/minimax-m3:free
-```
-
-API keys are optional for local testing. Fallback content is used when external services are unavailable.
-
-Never commit `.env` or API keys to GitHub.
-
 ## Build
 
 ```bash
-npm run typecheck
 npm run build
 npm start
 ```
