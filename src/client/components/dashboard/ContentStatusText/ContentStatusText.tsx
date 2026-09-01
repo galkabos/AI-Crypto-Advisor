@@ -1,4 +1,5 @@
-import type { ContentStatus } from "../../utils/contentStatus";
+import type { ContentStatus } from "../../../utils/contentStatus";
+import "./ContentStatusText.css";
 
 type ContentStatusTextProps = {
   status: ContentStatus | null;

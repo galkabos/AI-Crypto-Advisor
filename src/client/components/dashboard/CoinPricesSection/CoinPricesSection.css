@@ -1,0 +1,46 @@
+.price-list {
+  display: grid;
+  gap: 12px;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 14px;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.price-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.price-row div,
+.price-values {
+  display: grid;
+  gap: 2px;
+}
+
+.price-row span,
+.market-cap {
+  color: #657386;
+  font-size: 0.88rem;
+}
+
+.price-values {
+  text-align: right;
+}
+
+.market-cap {
+  grid-column: 1 / -1;
+}
+
+.positive {
+  color: #0f766e !important;
+}
+
+.negative {
+  color: #b42318 !important;
+}

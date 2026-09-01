@@ -1,7 +1,8 @@
 import { BadgeDollarSign, ShieldCheck } from "lucide-react";
 import { type FormEvent, useState } from "react";
-import { apiRequest } from "../api";
-import type { SessionPayload } from "../types";
+import { apiRequest } from "../../api";
+import type { SessionPayload } from "../../types";
+import "./AuthView.css";
 
 type AuthViewProps = {
   onSession: (session: SessionPayload) => void;

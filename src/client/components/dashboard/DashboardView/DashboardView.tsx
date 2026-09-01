@@ -1,13 +1,14 @@
 import { LogOut, RefreshCw } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import { apiRequest } from "../../api";
-import type { DashboardPayload, OptionsPayload, SectionKey, SessionPayload } from "../../types";
-import { getDisplayableInsight } from "../../utils/insight";
-import { buildPreferenceLabels } from "../../utils/preferences";
-import { AiInsightSection } from "./AiInsightSection";
-import { CoinPricesSection } from "./CoinPricesSection";
-import { CryptoMemeSection } from "./CryptoMemeSection";
-import { MarketNewsSection } from "./MarketNewsSection";
+import { apiRequest } from "../../../api";
+import type { DashboardPayload, OptionsPayload, SectionKey, SessionPayload } from "../../../types";
+import { getDisplayableInsight } from "../../../utils/insight";
+import { buildPreferenceLabels } from "../../../utils/preferences";
+import { AiInsightSection } from "../AiInsightSection/AiInsightSection";
+import { CoinPricesSection } from "../CoinPricesSection/CoinPricesSection";
+import { CryptoMemeSection } from "../CryptoMemeSection/CryptoMemeSection";
+import { MarketNewsSection } from "../MarketNewsSection/MarketNewsSection";
+import "./DashboardView.css";
 
 type DashboardViewProps = {
   session: SessionPayload;

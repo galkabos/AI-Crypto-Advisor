@@ -1,0 +1,32 @@
+.vote-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 18px 18px;
+}
+
+.vote-button {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  color: #263344;
+  background: #ffffff;
+  border-radius: 7px;
+  border: 1px solid #dbe2ec;
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.vote-button:hover {
+  transform: translateY(-1px);
+}
+
+.vote-button.active {
+  color: #ffffff;
+  background: #0f766e;
+  border-color: #0f766e;
+}

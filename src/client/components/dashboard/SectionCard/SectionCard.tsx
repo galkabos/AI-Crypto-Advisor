@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
-import type { SectionKey } from "../../types";
-import { VoteControls, type VoteHandler } from "./VoteControls";
+import type { SectionKey } from "../../../types";
+import { VoteControls, type VoteHandler } from "../VoteControls/VoteControls";
+import "./SectionCard.css";
 
 type SectionCardProps = {
   icon: ReactNode;

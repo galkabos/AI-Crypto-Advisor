@@ -1,13 +1,14 @@
 import { Newspaper } from "lucide-react";
-import type { DashboardPayload } from "../../types";
+import type { DashboardPayload } from "../../../types";
 import {
   getAttributionStatus,
   getMarketNewsStatus,
   getNoticeStatus
-} from "../../utils/contentStatus";
-import { buildMarketNewsSnapshot } from "../../utils/voteSnapshots";
-import { ContentStatusText } from "./ContentStatusText";
-import { SectionCard, type VoteHandler } from "./SectionCard";
+} from "../../../utils/contentStatus";
+import { buildMarketNewsSnapshot } from "../../../utils/voteSnapshots";
+import { ContentStatusText } from "../ContentStatusText/ContentStatusText";
+import { SectionCard, type VoteHandler } from "../SectionCard/SectionCard";
+import "./MarketNewsSection.css";
 
 type MarketNewsSectionProps = {
   generatedAt: string;

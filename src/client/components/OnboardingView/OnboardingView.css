@@ -1,0 +1,61 @@
+.onboarding-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+}
+
+.onboarding-panel {
+  width: min(920px, 100%);
+  padding: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.section-heading h1 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.section-heading p {
+  margin: 5px 0 0;
+  color: #657386;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  min-height: 40px;
+  border: 1px solid #cfd8e5;
+  border-radius: 7px;
+  color: #344054;
+  background: #ffffff;
+  padding: 9px 12px;
+  font-weight: 700;
+}
+
+.chip span {
+  color: #0f766e;
+  margin-right: 7px;
+}
+
+.chip.selected {
+  border-color: #0f766e;
+  color: #134e4a;
+  background: #dcf5ef;
+}
+
+@media (max-width: 520px) {
+  .onboarding-panel {
+    padding: 26px 20px;
+  }
+}

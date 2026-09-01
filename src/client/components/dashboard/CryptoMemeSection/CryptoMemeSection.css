@@ -1,0 +1,25 @@
+.meme-poster {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  text-align: center;
+  color: #172033;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 235, 0.96), rgba(224, 242, 254, 0.96)),
+    #fff7ed;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.meme-poster strong {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+.meme-poster span {
+  color: #7c2d12;
+  font-weight: 800;
+}

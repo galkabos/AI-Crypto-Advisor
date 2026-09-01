@@ -1,14 +1,15 @@
 import { BadgeDollarSign } from "lucide-react";
-import type { DashboardPayload } from "../../types";
+import type { DashboardPayload } from "../../../types";
 import {
   getAttributionStatus,
   getCoinPricesStatus,
   getNoticeStatus
-} from "../../utils/contentStatus";
-import { compactFormatter, currencyFormatter } from "../../utils/formatters";
-import { buildCoinPricesSnapshot } from "../../utils/voteSnapshots";
-import { ContentStatusText } from "./ContentStatusText";
-import { SectionCard, type VoteHandler } from "./SectionCard";
+} from "../../../utils/contentStatus";
+import { compactFormatter, currencyFormatter } from "../../../utils/formatters";
+import { buildCoinPricesSnapshot } from "../../../utils/voteSnapshots";
+import { ContentStatusText } from "../ContentStatusText/ContentStatusText";
+import { SectionCard, type VoteHandler } from "../SectionCard/SectionCard";
+import "./CoinPricesSection.css";
 
 type CoinPricesSectionProps = {
   generatedAt: string;

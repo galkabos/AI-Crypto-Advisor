@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { apiRequest } from "./api";
-import { AuthView } from "./components/AuthView";
-import { DashboardView } from "./components/dashboard/DashboardView";
-import { LoadingScreen } from "./components/LoadingScreen";
-import { OnboardingView } from "./components/OnboardingView";
+import "./components/shared.css";
+import { AuthView } from "./components/AuthView/AuthView";
+import { DashboardView } from "./components/dashboard/DashboardView/DashboardView";
+import { LoadingScreen } from "./components/LoadingScreen/LoadingScreen";
+import { OnboardingView } from "./components/OnboardingView/OnboardingView";
 import type { OptionsPayload, SessionPayload } from "./types";
 import { defaultOptions } from "./utils/preferences";
 

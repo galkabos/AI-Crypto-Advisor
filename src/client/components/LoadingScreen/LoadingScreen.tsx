@@ -1,4 +1,5 @@
 import { RefreshCw } from "lucide-react";
+import "./LoadingScreen.css";
 
 export function LoadingScreen() {
   return (

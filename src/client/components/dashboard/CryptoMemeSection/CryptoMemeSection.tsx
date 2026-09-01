@@ -1,7 +1,8 @@
 import { BarChart3, Laugh } from "lucide-react";
-import type { DashboardPayload } from "../../types";
-import { buildMemeSnapshot } from "../../utils/voteSnapshots";
-import { SectionCard, type VoteHandler } from "./SectionCard";
+import type { DashboardPayload } from "../../../types";
+import { buildMemeSnapshot } from "../../../utils/voteSnapshots";
+import { SectionCard, type VoteHandler } from "../SectionCard/SectionCard";
+import "./CryptoMemeSection.css";
 
 type CryptoMemeSectionProps = {
   generatedAt: string;

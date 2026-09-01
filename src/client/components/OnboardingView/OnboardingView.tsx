@@ -1,9 +1,10 @@
 import { Sparkles } from "lucide-react";
 import { type FormEvent, useState } from "react";
-import { apiRequest } from "../api";
-import type { OptionsPayload, SessionPayload } from "../types";
-import { toggleListValue } from "../utils/preferences";
-import { PreferenceGroup } from "./PreferenceGroup";
+import { apiRequest } from "../../api";
+import type { OptionsPayload, SessionPayload } from "../../types";
+import { toggleListValue } from "../../utils/preferences";
+import { PreferenceGroup } from "../PreferenceGroup/PreferenceGroup";
+import "./OnboardingView.css";
 
 type OnboardingViewProps = {
   options: OptionsPayload;

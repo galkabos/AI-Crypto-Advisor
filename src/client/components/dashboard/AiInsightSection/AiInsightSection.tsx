@@ -1,13 +1,14 @@
 import { Sparkles } from "lucide-react";
-import type { DashboardPayload } from "../../types";
+import type { DashboardPayload } from "../../../types";
 import {
   getAiInsightStatus,
   getAttributionStatus,
   getNoticeStatus
-} from "../../utils/contentStatus";
-import { buildAiInsightSnapshot } from "../../utils/voteSnapshots";
-import { ContentStatusText } from "./ContentStatusText";
-import { SectionCard, type VoteHandler } from "./SectionCard";
+} from "../../../utils/contentStatus";
+import { buildAiInsightSnapshot } from "../../../utils/voteSnapshots";
+import { ContentStatusText } from "../ContentStatusText/ContentStatusText";
+import { SectionCard, type VoteHandler } from "../SectionCard/SectionCard";
+import "./AiInsightSection.css";
 
 type AiInsightSectionProps = {
   generatedAt: string;

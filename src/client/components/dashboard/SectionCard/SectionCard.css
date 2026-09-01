@@ -1,0 +1,44 @@
+.dashboard-card {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #dde3ee;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(29, 36, 51, 0.06);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 18px 0;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #263344;
+}
+
+.card-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.card-content {
+  flex: 1;
+  padding: 18px;
+}
+
+.card-footer {
+  padding: 0 18px 12px;
+}
+
+.card-footer .content-status {
+  margin: 0;
+}

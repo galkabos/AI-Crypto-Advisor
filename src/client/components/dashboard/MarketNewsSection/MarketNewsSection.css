@@ -1,0 +1,33 @@
+.news-list {
+  display: grid;
+  gap: 12px;
+}
+
+.news-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.news-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.news-row strong {
+  display: block;
+  margin: 4px 0;
+}
+
+.news-row span,
+.news-row p {
+  color: #657386;
+  font-size: 0.88rem;
+}
+
+.news-row p {
+  margin: 0;
+  line-height: 1.5;
+}

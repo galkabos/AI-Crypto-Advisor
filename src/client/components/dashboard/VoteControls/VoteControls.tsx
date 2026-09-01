@@ -1,5 +1,6 @@
 import { ThumbsDown, ThumbsUp } from "lucide-react";
-import type { SectionKey } from "../../types";
+import type { SectionKey } from "../../../types";
+import "./VoteControls.css";
 
 export type VoteHandler = (
   section: SectionKey,
