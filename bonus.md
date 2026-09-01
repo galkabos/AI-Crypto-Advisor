@@ -1,3 +1,5 @@
+## Bonus
+
 The application stores user feedback for each dashboard section using thumbs up/down votes. Each vote is saved with the user ID, dashboard section, content ID, vote value, timestamp, and a snapshot of the exact content that was shown to the user.
 
 This feedback could later be used to improve recommendations by analyzing which types of content users prefer based on their onboarding preferences. For example, the system could learn which news sources, assets, AI insight styles, or meme types receive positive feedback from different investor profiles.
